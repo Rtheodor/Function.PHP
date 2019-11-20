@@ -36,6 +36,10 @@ class Calculadora{
     public function dividir(){
         $this->total = $this->numero1 / $this->numero2;
     }
+    
+    
+    
+    
     public function getTotal(){
         return $this->total;
     }

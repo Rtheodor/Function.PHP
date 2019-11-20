@@ -1,6 +1,6 @@
 <?php
 
-require_once 'classe/Calculadora.php';
+require_once 'classes/calculadora.php';
 
 
 $numero1 = $_POST['numero1'];
@@ -14,8 +14,6 @@ $calculadora = new Calculadora();
 $calculadora->setNumero1( $numero1);
 $calculadora->setNumero2( $numero2);
 
-$calculadora->somar();
-
 switch($operacao){
     case 'somar':
         $calculadora->somar();
@@ -25,15 +23,17 @@ switch($operacao){
         $calculadora->subtrair();
     break;
 
+    case 'multiplicar':
+        $calculadora->multiplicar();
+    break;
+   
     case 'dividir':
         $calculadora->dividir();
     break;
 
-    case 'multiplicar':
-        $calculadora->multiplicar();
-    break;
+   
 }
 
-echo $calculadora->getTota();
+echo $calculadora->getTotal();
 
 ?>
