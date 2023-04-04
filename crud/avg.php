@@ -11,7 +11,7 @@ include_once "conexao_a.php";
 </head>
 
 <body>
-    <h2>Média para nos cursos</h2>
+    <h2>Média para os cursos</h2>
 
     <?php
 
